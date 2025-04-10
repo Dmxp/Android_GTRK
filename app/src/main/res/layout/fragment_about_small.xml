@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/VGTRKmain"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:contentDescription="Изображение 2"
+                android:src="@drawable/r24" />
+            <!-- Текстовый блок -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Телерадиокомпания «Регион-Тюмень» входит в структуру уникального мирового холдинга ВГТРК – корпорацию государственных электронных массмедиа, которая присутствует практически во всех нишах современного российского телевидения и радио."
+                android:textAlignment="gravity"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="8dp"
+                android:contentDescription="Изображение 1"
+                android:src="@drawable/r1" />
+
+            <!-- Горизонтальный блок с двумя картинками -->
+            <!-- Текстовый блок -->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="150dp"-->
+<!--                    android:layout_height="100dp"-->
+<!--                    android:layout_margin="8dp"-->
+<!--                    android:layout_marginRight="8dp"-->
+<!--                    android:contentDescription="Изображение 1"-->
+<!--                    android:src="@drawable/r1" />-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="150dp"-->
+<!--                    android:layout_height="100dp"-->
+<!--                    android:layout_margin="8dp"-->
+<!--                    android:contentDescription="Изображение 2"-->
+<!--                    android:src="@drawable/r24" />-->
+<!--            </LinearLayout>-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Телерадиокомпания «Регион-Тюмень» — это два телевизионных канала «Россия 1», «Россия 24», три радиоканала «Радио России», «Маяк FM», «Вести FM» и сайт region-tyumen.ru."
+                android:textAlignment="gravity"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:contentDescription="Изображение 4"
+                android:src="@drawable/logo_mayak"
+                android:layout_gravity="center"/>
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="horizontal">-->
+<!--                <ImageView-->
+<!--                    android:layout_width="120dp"-->
+<!--                    android:layout_height="100dp"-->
+<!--                    android:layout_margin="4dp"-->
+<!--                    android:layout_marginRight="8dp"-->
+<!--                    android:contentDescription="Изображение 3"-->
+<!--                    android:src="@drawable/russia_radio" />-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="120dp"-->
+<!--                    android:layout_height="100dp"-->
+<!--                    android:layout_margin="4dp"-->
+<!--                    android:contentDescription="Изображение 4"-->
+<!--                    android:src="@drawable/logo_mayak" />-->
+<!--                <ImageView-->
+<!--                    android:layout_width="120dp"-->
+<!--                    android:layout_height="100dp"-->
+<!--                    android:layout_margin="4dp"-->
+<!--                    android:contentDescription="Изображение 4"-->
+<!--                    android:src="@drawable/logo_vesti" />-->
+
+<!--            </LinearLayout>-->
+            <!-- Текстовый блок -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Флагман компании – выпуски «ВЕСТИ. Регион-Тюмень». Приоритет и не обсуждаемое преимущество – выход наших программ на всю большую Тюменскую область с Ханты-Мансийским и Ямало-Ненецким автономными округами.
+
+Наша аудитория – более трех миллионов человек."
+                android:textAlignment="gravity"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:contentDescription="Изображение 4"
+                android:src="@drawable/logo_vesti"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Наш телевизионный возраст – 65 лет. А радийный – более 90! Нам не надо стесняться своих достойных творческих лет, проведенных с нашими главными судьями – сибирскими телезрителями и радиослушателями. За плечами наших сотрудников большая практика разноплановой работы и колоссальный опыт, сконцентрированный в нескольких поколениях творческих профессий.
+
+Постоянно повышающаяся планка держит в тонусе нас и наших преданных зрителей и слушателей. Мы приучили их к лучшему."
+                android:textAlignment="gravity"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:contentDescription="Изображение 3"
+                android:src="@drawable/russia_radio"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dp"
+                android:text="Сегодня на вооружении наших профессионалов лучшие камеры, осветительное, звуковое, инженерное телевизионное и радиооборудование. Вместе со специально разработанным режиссерским решением мы можем организовывать уникальные по качеству трансляции, соответствующие высоким стандартам, выработанным на ВГТРК."
+                android:textAlignment="gravity"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

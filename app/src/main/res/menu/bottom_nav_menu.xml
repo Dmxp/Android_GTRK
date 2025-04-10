@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_news"
+        android:icon="@drawable/news"
+        android:title="Новости" />
+    <item
+        android:id="@+id/nav_reporter"
+        android:icon="@drawable/im_reporter"
+        android:title="Я репортер" />
+    <item
+        android:id="@+id/nav_online"
+        android:icon="@drawable/frequency2"
+        android:title="Онлайн" />
+    <item
+        android:id="@+id/nav_projects"
+        android:icon="@drawable/layer"
+        android:title="Проекты" />
+    <item
+        android:id="@+id/nav_about"
+        android:icon="@drawable/info"
+        android:title="О компании" />
+</menu>
