@@ -7,10 +7,10 @@ import javax.mail.internet.*
 class EmailSender {
 
     companion object {
-        private const val EMAIL = "dmxp72@gmail.com" // Твой email
-        private const val PASSWORD = "Dimap2634!" // Пароль от email
-        private const val HOST = "smtp.gmail.com" // SMTP-хост ля Gmail
-        private const val PORT = "465" // Порт для SMTP
+        private const val EMAIL = "****" // Твой email
+        private const val PASSWORD = "****" // Пароль от email
+        private const val HOST = "****" // SMTP-хост ля Gmail
+        private const val PORT = "****" // Порт для SMTP
     }
 
     fun sendEmail(subject: String, body: String, attachments: List<Uri>) {
