@@ -37,32 +37,6 @@
                 android:layout_marginRight="8dp"
                 android:contentDescription="Изображение 1"
                 android:src="@drawable/r1" />
-
-            <!-- Горизонтальный блок с двумя картинками -->
-            <!-- Текстовый блок -->
-
-<!--            <LinearLayout-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:gravity="center"-->
-<!--                android:orientation="horizontal">-->
-
-<!--                <ImageView-->
-<!--                    android:layout_width="150dp"-->
-<!--                    android:layout_height="100dp"-->
-<!--                    android:layout_margin="8dp"-->
-<!--                    android:layout_marginRight="8dp"-->
-<!--                    android:contentDescription="Изображение 1"-->
-<!--                    android:src="@drawable/r1" />-->
-
-<!--                <ImageView-->
-<!--                    android:layout_width="150dp"-->
-<!--                    android:layout_height="100dp"-->
-<!--                    android:layout_margin="8dp"-->
-<!--                    android:contentDescription="Изображение 2"-->
-<!--                    android:src="@drawable/r24" />-->
-<!--            </LinearLayout>-->
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -76,33 +50,6 @@
                 android:contentDescription="Изображение 4"
                 android:src="@drawable/logo_mayak"
                 android:layout_gravity="center"/>
-<!--            <LinearLayout-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:gravity="center"-->
-<!--                android:orientation="horizontal">-->
-<!--                <ImageView-->
-<!--                    android:layout_width="120dp"-->
-<!--                    android:layout_height="100dp"-->
-<!--                    android:layout_margin="4dp"-->
-<!--                    android:layout_marginRight="8dp"-->
-<!--                    android:contentDescription="Изображение 3"-->
-<!--                    android:src="@drawable/russia_radio" />-->
-
-<!--                <ImageView-->
-<!--                    android:layout_width="120dp"-->
-<!--                    android:layout_height="100dp"-->
-<!--                    android:layout_margin="4dp"-->
-<!--                    android:contentDescription="Изображение 4"-->
-<!--                    android:src="@drawable/logo_mayak" />-->
-<!--                <ImageView-->
-<!--                    android:layout_width="120dp"-->
-<!--                    android:layout_height="100dp"-->
-<!--                    android:layout_margin="4dp"-->
-<!--                    android:contentDescription="Изображение 4"-->
-<!--                    android:src="@drawable/logo_vesti" />-->
-
-<!--            </LinearLayout>-->
             <!-- Текстовый блок -->
             <TextView
                 android:layout_width="match_parent"

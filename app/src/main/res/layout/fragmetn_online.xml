@@ -1,14 +1,151 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical">
+    android:background="@color/VGTRKmain"
+    android:padding="16dp">
 
-    <TextView
+    <!-- Логотип -->
+    <ImageView
+        android:id="@+id/id_logo_company"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Translations"
-        android:textSize="24sp" />
-</LinearLayout>
+        android:src="@drawable/region_tum"
+        android:contentDescription="Логотип компании"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="12dp" />
+    <!-- Заголовок для телевизионных каналов -->
+    <TextView
+        android:id="@+id/tv_tv_channels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Телевизионные каналы"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/id_logo_company"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btn_russia1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:paddingLeft="12dp"
+        android:paddingTop="12dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="12dp"
+        android:text="РОССИЯ 1"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_tv_channels"
+        app:rippleColor="@color/VGTRKdop" />
+
+    <Button
+        android:id="@+id/btn_russia24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="РОССИЯ 24"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:paddingTop="12dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="12dp"
+        android:layout_marginTop="12dp"
+        app:cornerRadius="8dp"
+        app:rippleColor="@color/VGTRKdop"
+        app:layout_constraintTop_toBottomOf="@id/btn_russia1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btn_ural_24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="УРАЛ 24"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:paddingTop="12dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="12dp"
+        android:layout_marginTop="12dp"
+        app:cornerRadius="8dp"
+        app:rippleColor="@color/VGTRKdop"
+        app:layout_constraintTop_toBottomOf="@id/btn_russia24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+        android:id="@+id/tv_radio_stations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Радиостанции"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/btn_ural_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <Button
+        android:id="@+id/btn_radio_russia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Радио России"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:paddingTop="12dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="12dp"
+        android:layout_marginTop="12dp"
+        app:cornerRadius="8dp"
+        app:rippleColor="@color/VGTRKdop"
+        app:layout_constraintTop_toBottomOf="@id/tv_radio_stations"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <Button
+        android:id="@+id/btn_radio_mayak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Радио Маяк"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:paddingTop="12dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="12dp"
+        android:layout_marginTop="12dp"
+        app:cornerRadius="8dp"
+        app:rippleColor="@color/VGTRKdop"
+        app:layout_constraintTop_toBottomOf="@id/btn_radio_russia"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <Button
+        android:id="@+id/btn_radio_vesti_fm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Радио Вести FM"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:paddingTop="12dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="12dp"
+        android:layout_marginTop="12dp"
+        app:cornerRadius="8dp"
+        app:rippleColor="@color/VGTRKdop"
+        app:layout_constraintTop_toBottomOf="@id/btn_radio_mayak"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

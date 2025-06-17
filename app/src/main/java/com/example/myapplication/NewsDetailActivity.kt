@@ -16,7 +16,6 @@ class NewsDetailActivity : AppCompatActivity() {
                     putInt("id", newsId)
                 }
             }
-
             supportFragmentManager.beginTransaction()
                 .replace(R.id.news_detail_container, fragment)
                 .commit()

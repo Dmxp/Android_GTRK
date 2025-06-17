@@ -104,7 +104,6 @@ class NewsFragment : Fragment() {
                 }
             }
         })
-
         return view
     }
 
@@ -157,13 +156,7 @@ class NewsFragment : Fragment() {
         val intent = Intent(requireContext(), NewsDetailActivity::class.java)
         intent.putExtra("id", newsId)
         startActivity(intent)
-//        val fragment = NewsDetailFragment().apply {
-//            arguments = Bundle().apply { putInt("id", newsId) }
-//        }
-//        parentFragmentManager.beginTransaction()
-//            .replace(R.id.fragment_container, fragment)
-//            .addToBackStack(null)
-//            .commit()
     }
 }
+
 

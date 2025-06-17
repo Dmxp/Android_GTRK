@@ -1,50 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:fillViewport="true">
 
-    <EditText
-        android:id="@+id/editTextName"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Ваше имя"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:shadowColor="@color/white"
-        android:textColor="@color/white" />
+        android:orientation="vertical"
+        android:padding="16dp">
+        <!-- Логотип компании (добавлен в начало) -->
+        <ImageView
+            android:id="@+id/id_logo_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/region_tum"
+            android:contentDescription="Логотип компании"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="12dp" />
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ваше ФИО"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:shadowColor="#FFFFFF"
+            android:textColor="#FFFFFF" />
 
-    <EditText
-        android:id="@+id/editTextContact"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Контактные данные"
-        android:inputType="textEmailAddress"
-        android:minHeight="48dp"
-        android:textColor="@color/white" />
+        <EditText
+            android:id="@+id/editTextDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Описание события"
+            android:inputType="textMultiLine"
+            android:minHeight="100dp"
+            android:gravity="top"
+            android:layout_marginTop="8dp"
+            android:textColor="#FFFFFF"/>
 
-    <Button
-        android:id="@+id/buttonAttachFiles"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Прикрепить фото/видео" />
+        <Button
+            android:id="@+id/buttonAttachPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Прикрепить фото"
+            android:layout_marginTop="8dp"/>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerViewFiles"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:minHeight="100dp"/>
+        <Button
+            android:id="@+id/buttonAttachVideo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Прикрепить видео"
+            android:layout_marginTop="8dp"/>
 
-    <Button
-        android:id="@+id/buttonSend"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Отправить"
-        android:layout_marginTop="16dp" />
+        <TextView
+            android:id="@+id/textAttachedFiles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Прикрепленные файлы:"
+            android:layout_marginTop="16dp"
+            android:textColor="#FFFFFF"/>
 
-</LinearLayout>
+        <LinearLayout
+            android:id="@+id/layoutAttachedFiles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            android:textColor="#FFFFFF"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_marginTop="16dp"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/buttonSend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Отправить"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+</ScrollView>
+
